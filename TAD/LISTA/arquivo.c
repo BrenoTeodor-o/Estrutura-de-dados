@@ -1,8 +1,17 @@
+/*
+|
+|   @author Breno Teodoro
+|   Universidade Estadual de Ponta Grossa
+|   Matéria: Estrutura de Dados
+|   Profº. Mathias Talevi Betim
+|   
+|
+*/
 
 #include "arquivo.h"
-#include<stdio.h>
-#include<stdlib.h>
-#include<conio.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 #define Tam 10
 
 /*
