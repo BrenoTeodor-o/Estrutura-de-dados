@@ -10,10 +10,13 @@
 
 #ifndef ARQUIVO_H_INCLUDED
 #define ARQUIVO_H_INCLUDED
+int valor;
+int vetor[10];
+int count = 0;
+// void helloWorld();
 
-void helloWorld();
 int insere(int valor); 		// função que iremos usar para inserir valores na minha lista usando valor e posição
 int exclui(int valor); 		// excluiremos o valor referente à posição da nossa lista
-void imprimir(); 			// iremos imprimir nossa listazia
+void imprime(); 			// iremos imprimir nossa listazia
 void alterar();				// nessa função alteramos o valor do nosso vetor
 #endif // ARQUIVO_H_INCLUDED

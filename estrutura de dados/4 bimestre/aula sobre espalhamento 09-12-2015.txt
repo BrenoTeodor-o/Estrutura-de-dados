@@ -1,0 +1,26 @@
+espalhamento (hashing)
+
+* vou inserindo os valores correspondentes as posiçoes
+ex valor 5 na posição 5
+* se for um valor maior que meu vetor tenho que fazer uma função matematica p saber onde insiro 
+h(x)=%Tam
+
+ex inserindo o numero 373458 em um vetor com Tam=10
+
+H(373458)=%10
+h(373458)=8
+
+ex num 37
+H(37)=7
+h(228)=8
+h(15)=5
+h(57)=7 ---> já existe alguém nesse lugar "COLISÃO" (dois numeros diferentes tentando ir p mesmo lugar)
+ -> solução:1 reespalhamento 2 encadeamento
+
+1) Reespalhamento: pego a posição onde ocorreu a colisão e uso outra função
+rh(pos)= (pos+1)%tam e caso essa posição esteja ocupada ele aplica novamente a função, sobre essa nova posição ocupada
+h(57)=7 esta ocupada
+rh(7)=8 esta ocupada
+rh(8)=9 pode inserir
+
+*quando o reespalhamento manda p uma posição que ñ existe, ele volta p inicio da tabela

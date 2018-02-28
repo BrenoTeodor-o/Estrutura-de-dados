@@ -1,0 +1,11 @@
+prova dia 16 quinta feira
+vai cair td que tem no pen drive e no caderno 
+
+PILHA: push;pop;topo pilha e imprime, imsere, e ver se a pilha esta vazia.
+
+FILA: não cai o imprima
+listas: não cai o remove
+
+entender a ideia da expressao de como verificar se ela esta certa
+(tem no caderno) ex: {(a+b)-[c+d]]
+

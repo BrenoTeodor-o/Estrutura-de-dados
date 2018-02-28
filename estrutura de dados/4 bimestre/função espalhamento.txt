@@ -1,0 +1,113 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define TAM 10
+
+int vetor[TAM];
+
+void inicia(){
+	for(int i=0; i<TAM; i++){
+		vetor[i] = -1;
+	}
+}
+
+
+int espalha(int x){
+	return x % TAM;
+}
+
+
+int reespalha(int pos){
+	return (pos+1) % 10;
+}
+
+
+void insere(int valor){
+	int pos, cont;
+	cont = 0;
+	
+	pos = espalha(valor);
+
+	while(vetor[pos] != -1 && cont != TAM){
+		cont++;
+		pos = reespalha(pos);
+		
+	}
+	
+	if(vetor[pos] == -1){
+		vetor[pos] = valor;
+		printf("\ELEMENTO INSERIDO COM SUCESSO!!!");
+		
+	}else{
+		printf("VETOR CHEIO!!!\n");
+	}
+}
+
+void imprime(){
+	printf("\nIMPRIME: ");
+	for(int i=0;i<TAM;i++){
+		printf("%d ", vetor[i]);
+	}
+	printf("\n\n");
+}
+
+void insercoes(){
+		imprime();
+	insere(45);
+	imprime();
+	insere(43);
+	imprime();
+	insere(56);
+	imprime();
+	insere(89);
+	imprime();
+	insere(75);
+	imprime();
+	insere(15);
+	imprime();
+	insere(36);
+	imprime();
+	insere(85);
+	imprime();
+	insere(356);
+	imprime();
+	insere(1);
+	imprime();
+	insere(37);
+}
+
+void busca(int valor){
+	int cont=0;
+	int pos;
+	pos = espalha(valor);
+	
+	while(vetor[pos] != valor && cont != TAM && vetor[pos] != -1){
+		
+		cont++;
+		pos = reespalha(pos);
+			
+	}
+	
+	if(vetor[pos] == valor){
+		printf("\nVALOR %d ENCONTRADO!!!", valor);
+	}else{
+		printf("\nVALOR %d NAO ENCONTRADO!!!", valor);
+	}
+}
+
+int main(){
+	
+	inicia();
+	
+	insercoes();
+	
+	busca(43);
+	busca(999);
+
+
+}
+
+
+
+
+
+

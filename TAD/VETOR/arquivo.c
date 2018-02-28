@@ -15,59 +15,40 @@
 
 
 /*DEFINIÇÕES DE VARIÁVEIS*/
-int vetor[TAM],i = 0, count = 0;
+int i = 0;
 
 /*------------------------*/
 
 void helloWorld()
 {
-    printf("Hello World!");
+printf("Hello World!");
 }
 
 
-int insere(int valor)
+int insere(int valor) 
 {
-
-	for(i=0 ; i < 10 ; i++){
-        if(vetor[i] == 0){
-        	vetor[i] = valor;
-        	count++;
-        }
-    }
-    printf("\nValor inserido com sucesso!");
-    return 1;
+vetor[count] = valor;
+count++;
+printf("\nValor inserido com sucesso!\n");
+return 1;
 }
 
 int exclui(int valor)
 {
-	for (i = valor; i < 10; i--){
-		printf("%d\n", vetor[valor]);
+for(i = 0; i < TAM; i++){
+	if (vetor[i]==valor)
+	{
+		vetor[i] = 0;
 	}
+}
+printf("\n valor deletado \n");
 }
 
 void imprime()
 {
-	printf("\n \n vetor impresso: \n");
-	for(i = 0; i < 10; i++){
+printf("\n \n vetor impresso: \n");
+	for(i = 0; i < TAM; i++)
+	{
 	    printf("%d ; ", vetor[i]);//vetor de inteiro	
 	}	
 }
-
-// void alterar() {
-//     int antigo, novo, i;
-//     printf("Digite o numero a ser alterado: ");
-//     scanf("%d", &antigo);
-//     printf("Valor a ser inserido: ");
-//     scanf("%d", &novo);
-
-//     for (i = 0; vetor[i] != vetor[TAM-1]; i++) {
-//         if (vetor[i] == antigo)
-//             vetor [i] = novo;
-//         }
-
-//     printf("Novo vetor: ");
-//     for (i = 0; vetor[i] != vetor[TAM-1]; i++){
-//         printf("%d""; ", vetor[i]);
-//     }
-//     printf("\n\n");
-// }

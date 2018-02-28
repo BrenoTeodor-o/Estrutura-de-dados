@@ -18,9 +18,16 @@ int main()
     
     printf("\n*-------------------------------------------------*\n");
     insere(5);
-    // printf("\n");
+    insere(7);
+    insere(6);
+    insere(4);
+    insere(3);
+    insere(2);
+    printf("\n");
     imprime();
-    // exclui(5);
-    // imprime();
+    exclui(5);
+    exclui(7);
+    alterar();
+    imprime();
     printf("\n*-------------------------------------------------*\n");
 }

@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+int main(){
+	
+	int  pass=1;
+	bool sorted;
+	int i;
+	int n;
+	int A[10] =  {9, 5, 1, 3, 7, 4, 6, 8, 11, 50};
+	int troque;
+	int aux;
+	
+	while(sorted = false  && pass < n){
+		sorted = true;
+		for(i=0; n-pass-1; i++){
+			if (A[i] > A[i+1]){ 
+				aux = A[i];
+				A[i] = A[i+1];
+				A[i+1] = aux;
+			sorted = false;
+			}
+		}
+		pass++;
+	}
+	
+	for(i=0;i<10;i++){
+			printf("%d ", A[i]);
+	}
+
+ 
+ int vetor[10] = {10,9,8,7,6,5,4,3,2,1};
+
+  int tamanho = 10;
+  int troca;
+
+  for(int i=tamanho-1; i >= 1; i--) {  
+        
+    for( int j=0; j < i ; j++) {
+          
+      if(vetor[j]>vetor[j+1]) {
+                
+        troca = vetor[j];
+        vetor[j] = vetor[j+1];
+        vetor[j+1] = troca;
+        
+        }
+      }
+    }
+
+printf("\n \n ");
+  for( int r = 0; r < 10; ++r){
+
+    printf("%d ",vetor[r]);
+ }
+	
+	
+}

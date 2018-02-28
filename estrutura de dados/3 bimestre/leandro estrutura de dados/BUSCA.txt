@@ -1,0 +1,77 @@
+Alg. de busca: busca um valor em um cinjunto de dados.
+
+RECUPERAÇÃO busca com sucesso
+
+TABELA DE BUSCA ou DIOCIONÁRIO: conjuntos onde são feitas buscas.
+
+
+				CONJUNTO DESORDENADO DE DADOS
+Neste caso só pode ser usada uma busca sequencial. uma busca sequencial pode ser usada em qualquer estrutura de dados.
+
+Para melhorar a eficiência da busca sequencial em conjuntos desordenados, é interessante manter os valores buscados com maior frequência nas primeiras posições.
+
+Há 2 maneiras de se fazer isso:
+	TRANSPOSIÇÃO: vem aos poucos, um passo por vez
+  	exemplo: 10 5 7 20 15
+		busca 7
+	10 7 5 20 15
+		busca 15
+	10 7 5 15 20 
+		...
+
+	MOVER PRA FRENTE: o elemento buscado vai para a posição 0 do vetor.
+	exemplo: 10 5 7 20 15
+		busca 20
+	20 10 5 7 15
+		busca 5
+	5 20 10 7 15
+		...
+
+
+Uma busca sequencial faz, em média, (n+1)/2 comparaçõespara um conjunto de tamanho N, e portanto e O(n).
+
+
+				BUSCA EM CONJUNTO ORDENADO
+Se um conjunto está ordenado, é possível usar métodos de busca mais eficientes
+
+BUSCA BINÁRIA
+	
+	7 10 15 18 20 35 40 55
+		busca 55
+		55 > 20? 
+	20 35 40 55
+		55> 40?
+	55 achou!
+		...
+A eficiência da busca é de 0(log n).
+A busca binária só funciona em vetores.
+
+BUSCA EM ÁRVORES
+Quando se armazena valores em uma arvore de busca binaria pode-se fazer inserões remoções e buscas com eficiêcia.
+A eficiencia da busca depende da ordem em que os numeros sao inseridos .
+Exemplo:
+	10 5 9 19 14
+	
+	10
+       5  19  OK
+      3  14     O(loG n)
+
+	mas...
+	
+	3 5 10 14 19
+	gerando uma arvore q só tem 1 linha, n funciona... 0(n)
+
+Para que uma busca seja sempre O(logn) deve-se manter a arvore balanceada.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
