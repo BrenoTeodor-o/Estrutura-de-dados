@@ -11,7 +11,7 @@
 #include "file.h"
 #include <stdio.h>
 #include <stdlib.h>
-#define TAM 10
+
 
 
 /*DEFINIÇÕES DE VARIÁVEIS*/
@@ -21,34 +21,28 @@ int i = 0;
 
 void helloWorld()
 {
-printf("Hello World!");
+	printf("\n helloWorld \n");
 }
-
-
-int insere(int valor) 
-{
-vetor[count] = valor;
-count++;
-printf("\nValor inserido com sucesso!\n");
-return 1;
-}
-
-int exclui(int valor)
-{
-for(i = 0; i < TAM; i++){
-	if (vetor[i]==valor)
-	{
-		vetor[i] = 0;
+void empty(){
+	if(contador == -1){
+		printf("pilha vazia\n");
 	}
 }
-printf("\n valor deletado \n");
+void push(Aluno a1){
+    if(contator > TAM)
+    {
+        printf("\n pilha cheia \n");
+        return;
+    }else{
+    	contador=contador+1;
+    	vetor[i]=Aluno;
+    	printf("inserido\n");
+    }
 }
-
-void imprime()
+void init()
 {
-printf("\n \n vetor impresso: \n");
-	for(i = 0; i < TAM; i++)
-	{
-	    printf("%d ; ", vetor[i]);//vetor de inteiro	
-	}	
+	if (contador==-1){
+		contador++;
+		printf("\ninicializado\n");
+	}
 }

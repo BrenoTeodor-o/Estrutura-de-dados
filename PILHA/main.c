@@ -9,14 +9,10 @@
 */
 
 #include "file.c"
+#include <stdlib.h>
 #include <stdio.h>
-#include <stdlib.h> // a libc vai definir essas funções
-
 
 int main()
 {
-    
-    printf("\n*-------------------------------------------------*\n");
-
-    printf("\n*-------------------------------------------------*\n");
+    push("a");
 }
