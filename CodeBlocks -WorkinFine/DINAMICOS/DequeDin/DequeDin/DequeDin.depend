@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1523202256 source:e:\dequedin\dequedin\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"din.h"
+
+1523201600 e:\dequedin\dequedin\din.h
+
+1523201702 source:e:\dequedin\dequedin\din.c
+	<stdio.h>
+	<stdlib.h>
+	"din.h"
+

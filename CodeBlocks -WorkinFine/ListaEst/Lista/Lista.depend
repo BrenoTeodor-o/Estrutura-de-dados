@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1523742868 source:f:\exercicios matias\listaest\lista\main.cpp
+	<conio.h>
+	<stdlib.h>
+	<stdio.h>
+	"lis.h"
+
+1523716974 f:\exercicios matias\listaest\lista\lis.h
+
+1523744024 source:f:\exercicios matias\listaest\lista\lis.c
+	<conio.h>
+	<stdlib.h>
+	<stdio.h>
+	"lis.h"
+
+1523744994 source:g:\exercicios matias\listaest\lista\lis.c
+	<conio.h>
+	<stdlib.h>
+	<stdio.h>
+	"lis.h"
+
+1523716974 g:\exercicios matias\listaest\lista\lis.h
+
+1523742868 source:g:\exercicios matias\listaest\lista\main.cpp
+	<conio.h>
+	<stdlib.h>
+	<stdio.h>
+	"lis.h"
+

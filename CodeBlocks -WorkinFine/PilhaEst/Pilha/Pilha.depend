@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1521723557 source:c:\users\admin\desktop\pilhaestaticatad\pilha\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"pil.h"
+
+1521723754 c:\users\admin\desktop\pilhaestaticatad\pilha\pil.h
+
+1521723653 source:c:\users\admin\desktop\pilhaestaticatad\pilha\pil.c
+	<stdio.h>
+	<stdlib.h>
+	"pil.h"
+
+1521723824 source:e:\exercicios matias\pilhaestaticatad\pilha\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"pil.h"
+
+1522931396 e:\exercicios matias\pilhaestaticatad\pilha\pil.h
+
+1521723654 source:e:\exercicios matias\pilhaestaticatad\pilha\pil.c
+	<stdio.h>
+	<stdlib.h>
+	"pil.h"
+
+1521723824 source:e:\pilhaest\pilha\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"pil.h"
+
+1522932070 e:\pilhaest\pilha\pil.h
+
+1521723654 source:e:\pilhaest\pilha\pil.c
+	<stdio.h>
+	<stdlib.h>
+	"pil.h"
+

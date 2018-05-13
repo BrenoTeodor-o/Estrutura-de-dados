@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1522974648 source:f:\pilhadin\pilhadin\din.c
+	<stdio.h>
+	<stdlib.h>
+	"din.h"
+
+1522974650 f:\pilhadin\pilhadin\din.h
+
+1522986772 source:e:\pilhadin\pilhadin\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"din.h"
+
+1522987976 e:\pilhadin\pilhadin\din.h
+
+1522987978 source:e:\pilhadin\pilhadin\din.c
+	<stdio.h>
+	<stdlib.h>
+	"din.h"
+

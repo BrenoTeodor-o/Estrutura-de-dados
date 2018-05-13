@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1523222214 source:e:\dequeest\deque\deq.c
+	<stdio.h>
+	<stdlib.h>
+	"deq.h"
+
+1523222048 e:\dequeest\deque\deq.h
+
+1523222214 source:e:\dequeest\deque\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"deq.h"
+

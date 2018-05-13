@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1522934192 source:c:\users\admin\desktop\filaest\fila\fil.c
+	<stdio.h>
+	<stdlib.h>
+	"fil.h"
+
+1522934192 c:\users\admin\desktop\filaest\fila\fil.h
+
+1522934177 source:c:\users\admin\desktop\filaest\fila\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"fil.h"
+
+1522972222 source:f:\filaest\fila\fil.c
+	<stdio.h>
+	<stdlib.h>
+	"fil.h"
+
+1522972534 f:\filaest\fila\fil.h
+
+1522972448 source:f:\filaest\fila\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"fil.h"
+

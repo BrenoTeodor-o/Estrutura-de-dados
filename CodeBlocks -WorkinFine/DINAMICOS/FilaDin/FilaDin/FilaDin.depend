@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1522988924 source:e:\filadin\filadin\din.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	<locale.h>
+	<string.h>
+	"din.h"
+
+1522989080 e:\filadin\filadin\din.h
+
