@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1529874780 /home/felipe/Documents/selection_sort/ord.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1529874458 source:/home/felipe/Documents/selection_sort/ord.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ord.h"
+
+1529875221 source:/home/felipe/Documents/ordenadores/ord.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ord.h"
+
+1529874780 /home/felipe/Documents/ordenadores/ord.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1529875728 source:/home/felipe/Documents/ordenadores/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ord.h"
+
+1530476805 source:c:\users\breno\desktop\ordenadores\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ord.h"
+
+1530476506 c:\users\breno\desktop\ordenadores\ord.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1530476765 source:c:\users\breno\desktop\ordenadores\ord.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ord.h"
+
