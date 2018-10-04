@@ -35,6 +35,6 @@ char Verifica(char str[])
 }
 
 void main(){
-    palindromo("socos");
-    Verifica("socos");
+    palindromo("socorram-me subi no onibus em marrocos");
+    Verifica("socorram-me subi no onibus em marrocos");
 }
