@@ -19,22 +19,22 @@ char palindromo (char word[999])
 		printf("NAO PALINDROMO\n\n");
 }
 
-int palindromo_rec (char[999])
- int i, j;
+
+char Verifica(char str[])
 {
-    if(i >= j ){
-        printf("NAO PALINDROMO\n\n");
-        return 0;
-    }else{
-    if(v[ i ] = = v[ j ]){
-        return palindromo_rec( v, i+1, j-1);
-        printf("EH PALINDROMO");
-    }else{
-        return 0;
-        }
-    }
+   if((str[strlen(str)-1]==str[0]) && (str[strlen(str)-2]==str[1])){
+        printf("EH PALINDRIMO");
+        return 1;
+   } else {
+      if (str[0] != str[strlen(str)-1]){
+            printf("NAO EH PALINDRIMO");
+            return 0;
+      }
+      return Verifica( str + 1);
+   }
 }
+
 void main(){
     palindromo("socos");
-    palindromo_rec("socos");
+    Verifica("socos");
 }
