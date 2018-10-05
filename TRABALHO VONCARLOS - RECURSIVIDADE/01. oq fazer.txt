@@ -1,0 +1,18 @@
+Calculando o Fatorial
+Escreva uma função recursiva e iterativa que calcule o fatorial de um elemento n
+
+Calculando Fibonacci
+Escreva uma função recursiva e iterativa que descubra o valor do Fibonacci de
+uma determinada posição do vetor de n posições.
+
+Calculando o Máximo
+Escreva uma função recursiva e iterativa que calcule o máximo de um vetor dado,
+com n elementos
+
+Busca Binária
+Escreva uma função recursiva e iterativa que faça uma busca binária entre 10
+elementos que o usuário digitar
+
+Palíndromos
+Escreva uma função recursiva e iterativa que descubra se uma palavra digitada
+pelo usuário é palíndromo ou não.
