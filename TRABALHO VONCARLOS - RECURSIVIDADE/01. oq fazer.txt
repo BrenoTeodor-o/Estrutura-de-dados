@@ -6,13 +6,13 @@ Escreva uma funçãoo recursiva e iterativa que descubra o valor do Fibonacci de
 uma determinada posiçãoo do vetor de n posições.
 
 Calculando o Maximo
-Escreva uma função recursiva e iterativa que calcule o m�ximo de um vetor dado,
+Escreva uma função recursiva e iterativa que calcule o máximo de um vetor dado,
 com n elementos
 
 Busca Binária
-Escreva uma função recursiva e iterativa que fa�a uma busca bin�ria entre 10
-elementos que o usu�rio digitar
+Escreva uma função recursiva e iterativa que faça uma busca binária entre 10
+elementos que o usuário digitar
 
 Palíndromos
 Escreva uma funçãoo recursiva e iterativa que descubra se uma palavra digitada
-pelo usuário � pal�ndromo ou não
+pelo usuário é palíndromo ou não.
