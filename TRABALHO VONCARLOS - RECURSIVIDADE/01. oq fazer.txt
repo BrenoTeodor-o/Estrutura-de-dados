@@ -1,7 +1,7 @@
-Calculando o Fatorial
+Calculando o Fatorial - DONE
 Escreva uma funçãoo recursiva e iterativa que calcule o fatorial de um elemento n
 
-Calculando Fibonacci
+Calculando Fibonacci - DONE
 Escreva uma funçãoo recursiva e iterativa que descubra o valor do Fibonacci de
 uma determinada posiçãoo do vetor de n posições.
 
@@ -13,6 +13,6 @@ Busca Binária
 Escreva uma função recursiva e iterativa que faça uma busca binária entre 10
 elementos que o usuário digitar
 
-Palíndromos
+Palíndromos - DONE
 Escreva uma funçãoo recursiva e iterativa que descubra se uma palavra digitada
-pelo usuário é palíndromo ou não.
+pelo usuário é palíndromo ou não.git 
