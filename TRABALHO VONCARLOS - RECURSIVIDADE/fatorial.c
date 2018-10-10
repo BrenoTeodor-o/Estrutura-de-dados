@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int fat_iterativo(int n)
+int fat_iterativo()
 {
-      n = 0;
+      int n = 0;
+      // n = 0;
       int fat=0;
       printf("Insira um valor para o qual deseja calcular seu fatorial: ");
       scanf("%d", &n);
@@ -16,7 +17,7 @@ int fat_iterativo(int n)
 
 }
 int fat (int n) {
-      //Fun��o que calcula, recursivamente, o fatorial de n.
+      //Função que calcula, recursivamente, o fatorial de n.
       if ((n==1) || (n==0)) return 1;
       else
             return fat(n-1)*n;
@@ -26,9 +27,9 @@ int fat (int n) {
 int main()
 {
 
-fat_iterativo(12);
+fat_iterativo();
 
-//Declara��o de n, o n�mero informado que gera o fatorial recursivo.
+//Declara n, o número informado que gera o fatorial recursivo.
 int n;
 printf("\nInforme o numero que deseja obter o fatorial:\n");
 scanf("%d",&n);
