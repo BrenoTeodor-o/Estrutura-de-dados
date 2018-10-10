@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include <locale.h> //necessário para usar setlocale
 
-int main(int argc, char **argv)
-{
+int maximo_rec(){
     float numero_max; // elemento m�ximo do vetor
     float *vetor; // vetor que ser� alocado din�micamente
     int i; //contador;
@@ -42,5 +40,33 @@ int main(int argc, char **argv)
     
     // Liberando a mem�ria alocada din�micamente
     free(vetor);
-    return(0); 
+    return(0);
 }
+
+int maximo_it () {
+    int vet[] = {1,22,45,8,9,6,46};
+    int atual = 0;
+    int tam = (sizeof(vet)/sizeof((vet)[0]));
+
+    for (int i = 0; i < tam; i++) {
+        if (vet[i] > vet[i+1]) {
+            if(vet[i] > atual)
+            atual = vet[i];
+        }
+    }
+    printf("%d", atual);
+}
+
+int main(int argc, char **argv)
+{
+    printf("funcao recursiva: \n");
+    maximo_rec();
+    printf("\n ------------------------------------------- \n\n");
+    printf("funcao iterativa: \n");
+    maximo_it();
+
+    return(0);
+}
+/*
+
+*/
