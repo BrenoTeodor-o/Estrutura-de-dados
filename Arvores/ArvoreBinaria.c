@@ -10,13 +10,13 @@ int main () {
 	
 	setlocale(LC_ALL, "Portuguese");
 	
-	printf("\t ÁRVORE BINARIA DE BUSCA\n\n");
+	printf("\t ï¿½RVORE BINARIA DE BUSCA\n\n");
 		
-	printf("Quantos elementos você deseja inserir na árvore? ");
+	printf("Quantos elementos vocï¿½ deseja inserir na ï¿½rvore? ");
 	scanf("%d", &qtd_nos);
 	
 	for (i = 0; i < qtd_nos; i++) {
-		printf("\n- Insira o %dº elemento na Árvore: ", i + 1);
+		printf("\n- Insira o %dï¿½ elemento na ï¿½rvore: ", i + 1);
 		scanf("%d", &elemento);
 		
 		printf("\n");
@@ -26,28 +26,28 @@ int main () {
 	
 	printf("\n\n================================\n\n");
 	
-	printf("Árvore sendo percorrida em Pré-Ordem\n\n");
+	printf("ï¿½rvore sendo percorrida em Prï¿½-Ordem\n\n");
 	exibir_Pre_Ordem(raiz);
 	
 	printf("\n\n================================\n\n");
 	
-	printf("Árvore sendo percorrida em Ordem\n\n");
+	printf("ï¿½rvore sendo percorrida em Ordem\n\n");
 	exibir_Em_Ordem(raiz);
 	
 	printf("\n\n================================\n\n");
 	
-	printf("Árvore sendo percorrida em Pós-Ordem\n\n");
+	printf("ï¿½rvore sendo percorrida em Pï¿½s-Ordem\n\n");
 	exibir_Pos_Ordem(raiz);
 	
 	printf("\n\n================================\n\n");
 	
-	printf("\tRemoção de elementos\n\n");
+	printf("\tRemoï¿½ï¿½o de elementos\n\n");
 	
-	printf("Quantos elementos você deseja remover da árvore? ");
+	printf("Quantos elementos vocï¿½ deseja remover da ï¿½rvore? ");
 	scanf("%d", &qtd_nos);
 	
 	for (i = 0; i < qtd_nos; i++) {
-		printf("\n- Digite o elemento a ser removido da Árvore: ", i + 1);
+		printf("\n- Digite o elemento a ser removido da ï¿½rvore: ", i + 1);
 		scanf("%d", &elemento);
 		
 		printf("\n");
@@ -57,17 +57,17 @@ int main () {
 	
 	printf("\n\n================================\n\n");
 	
-	printf("Árvore sendo percorrida em Pré-Ordem\n\n");
+	printf("ï¿½rvore sendo percorrida em Prï¿½-Ordem\n\n");
 	exibir_Pre_Ordem(raiz);
 	
 	printf("\n\n================================\n\n");
 	
-	printf("Árvore sendo percorrida em Ordem\n\n");
+	printf("ï¿½rvore sendo percorrida em Ordem\n\n");
 	exibir_Em_Ordem(raiz);
 	
 	printf("\n\n================================\n\n");
 	
-	printf("Árvore sendo percorrida em Pós-Ordem\n\n");
+	printf("ï¿½rvore sendo percorrida em Pï¿½s-Ordem\n\n");
 	exibir_Pos_Ordem(raiz);
 	
 	printf("\n\n================================\n\n");
