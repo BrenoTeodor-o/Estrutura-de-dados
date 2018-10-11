@@ -1,3 +1,9 @@
+/*
+|UNIVERSIDADE ESTADUAL DE PONTA GROSSA
+| Breno Ribeiro Teodoro
+| 15059823
+| Estrutura de Dados
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,6 +12,30 @@ typedef struct no {
 	struct no *direita;
 	int valor;
 }no;
+
+int maior(int a, int b){
+    if(a > b)
+        return a;
+    else
+        return b;
+}//maior
+
+int altura(no *raiz){
+   if((raiz == NULL) || (raiz->esquerda == NULL && raiz->direita == NULL))
+       return 0;
+   else
+       return 1 + maior(altura(raiz->esquerda), altura(raiz->direita));
+	printf("%d", altura);
+}
+
+int imprimeRaiz (no *raiz) {  // Imprime primeiro a raiz seguindo do filho esquerdo e depois o filho direito.
+	
+	if (raiz == NULL) {
+		return 0;
+	} else {
+	printf(" - %d", raiz -> valor);
+	}
+}
 
 
 void inserirNo (no **raiz, int elemento) {
@@ -99,4 +129,40 @@ void exibir_Pos_Ordem (no *raiz) {  // Imprime primeiro o filho esquerdo seguido
 	exibir_Pos_Ordem(raiz -> esquerda);
 	exibir_Pos_Ordem(raiz -> direita);
 	printf(" - %d", raiz -> valor);
+}
+
+int buscar(no *raiz, int elemento)
+{
+	int direita, esquerda;
+	if(raiz==NULL)
+		return 0;
+	if(raiz->valor==elemento) //Localizou o noh
+	{
+		return 1;
+	}
+	if(elemento<raiz->valor) //Percorre pela esquerda, caso o numero seja menor do que a raiz
+	{
+		esquerda=buscar(raiz->esquerda,elemento);
+	}
+	else
+	{
+		direita=buscar(raiz->direita,elemento);
+	}
+	return esquerda+direita;
+}
+
+// int busca(no *raiz, int elemento) {
+  
+//   /* O operador lógico || interrompe a busca quando o elemento for encontrado */
+//   return raiz->valor, num || busca(raiz->esquerda, num) || busca(raiz->direita, num);
+// }
+
+int estbinaria(no *raiz){
+	if (raiz != NULL){
+		if((raiz->direita == NULL && raiz->esquerda != NULL) || (raiz->direita != NULL && raiz->esquerda == NULL)){
+			return 0;
+		}else{
+			return estbinaria(raiz->esquerda) && estbinaria(raiz->direita);
+		}
+	} else return 1;
 }

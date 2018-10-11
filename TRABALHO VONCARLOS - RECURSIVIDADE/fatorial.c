@@ -1,4 +1,10 @@
 
+/*
+|UNIVERSIDADE ESTADUAL DE PONTA GROSSA
+| Breno Ribeiro Teodoro
+| 15059823
+| Estrutura de Dados
+*/
 #include <stdlib.h>
 #include <stdio.h>
 

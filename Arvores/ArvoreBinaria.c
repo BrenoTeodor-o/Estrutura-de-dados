@@ -1,22 +1,28 @@
+/*
+|UNIVERSIDADE ESTADUAL DE PONTA GROSSA
+| Breno Ribeiro Teodoro
+| 15059823
+| Estrutura de Dados
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
 #include "ArvoreBinaria.h"
 
 int main () {
-	int elemento = 0, qtd_nos = 0, i = 0;
+	int elemento = 0, qtd_nos = 0, i = 0, num = 0;
 	
 	no *raiz = NULL;
 	
 	setlocale(LC_ALL, "Portuguese");
 	
-	printf("\t �RVORE BINARIA DE BUSCA\n\n");
+	printf("\t ARVORE BINARIA DE BUSCA\n\n");
 		
-	printf("Quantos elementos voc� deseja inserir na �rvore? ");
+	printf("Quantos elementos voce deseja inserir na Arvore? ");
 	scanf("%d", &qtd_nos);
 	
 	for (i = 0; i < qtd_nos; i++) {
-		printf("\n- Insira o %d� elemento na �rvore: ", i + 1);
+		printf("\n- Insira o %d elemento na arvore: ", i + 1);
 		scanf("%d", &elemento);
 		
 		printf("\n");
@@ -26,28 +32,32 @@ int main () {
 	
 	printf("\n\n================================\n\n");
 	
-	printf("�rvore sendo percorrida em Pr�-Ordem\n\n");
+	printf("Imprime Raiz: %d\n\n", imprimeRaiz(raiz));
+	
+	printf("\n\n================================\n\n");
+	
+	printf("Arvore sendo percorrida em Pre-Ordem\n\n");
 	exibir_Pre_Ordem(raiz);
 	
 	printf("\n\n================================\n\n");
 	
-	printf("�rvore sendo percorrida em Ordem\n\n");
+	printf("Arvore sendo percorrida em Ordem\n\n");
 	exibir_Em_Ordem(raiz);
 	
 	printf("\n\n================================\n\n");
 	
-	printf("�rvore sendo percorrida em P�s-Ordem\n\n");
+	printf("Arvore sendo percorrida em Pos-Ordem\n\n");
 	exibir_Pos_Ordem(raiz);
 	
 	printf("\n\n================================\n\n");
 	
-	printf("\tRemo��o de elementos\n\n");
+	printf("\tRemoão de elementos\n\n");
 	
-	printf("Quantos elementos voc� deseja remover da �rvore? ");
+	printf("Quantos elementos você deseja remover da arvore? ");
 	scanf("%d", &qtd_nos);
 	
 	for (i = 0; i < qtd_nos; i++) {
-		printf("\n- Digite o elemento a ser removido da �rvore: ", i + 1);
+		printf("\n- Digite o elemento a ser removido da arvore: ", i + 1);
 		scanf("%d", &elemento);
 		
 		printf("\n");
@@ -57,20 +67,38 @@ int main () {
 	
 	printf("\n\n================================\n\n");
 	
-	printf("�rvore sendo percorrida em Pr�-Ordem\n\n");
+	printf("Imprime Raiz: %d\n\n", imprimeRaiz(raiz));
+	
+	printf("\n\n================================\n\n");
+	
+	printf("Arvore sendo percorrida em Pre-Ordem\n\n");
 	exibir_Pre_Ordem(raiz);
 	
 	printf("\n\n================================\n\n");
 	
-	printf("�rvore sendo percorrida em Ordem\n\n");
+	printf("Arvore sendo percorrida em Ordem\n\n");
 	exibir_Em_Ordem(raiz);
 	
 	printf("\n\n================================\n\n");
 	
-	printf("�rvore sendo percorrida em P�s-Ordem\n\n");
+	printf("Arvore sendo percorrida em POs-Ordem\n\n");
 	exibir_Pos_Ordem(raiz);
 	
 	printf("\n\n================================\n\n");
+
+	printf("Altura da arvore: %d\n\n", altura(raiz));
+
+	printf("\n\n================================\n\n");
+
+	printf("eh estritamente binaria? ", estbinaria(raiz));
+	if (estbinaria(raiz) == 1) printf("sim");
+	else printf("nao");
 	
+	printf("\n\n================================\n\n");
+
+	printf("\n");
+	printf("%d", buscar(raiz, 74));
+	printf("\n");
+
 	return 0;
 }

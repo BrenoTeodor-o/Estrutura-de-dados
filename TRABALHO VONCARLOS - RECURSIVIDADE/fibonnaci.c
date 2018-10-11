@@ -1,3 +1,9 @@
+/*
+|UNIVERSIDADE ESTADUAL DE PONTA GROSSA
+| Breno Ribeiro Teodoro
+| 15059823
+| Estrutura de Dados
+*/
 #include "stdio.h"
 
 int fib_iterativo(int n){
@@ -6,7 +12,7 @@ int fib_iterativo(int n){
   a = 0;
   b = 1;
 
-  printf("Série de Fibonacci:\n");
+  printf("Sï¿½rie de Fibonacci:\n");
   printf("%d\n", b);
 
   for(i = 0; i < n; i++)
