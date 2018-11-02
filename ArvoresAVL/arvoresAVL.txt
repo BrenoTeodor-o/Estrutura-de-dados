@@ -1,0 +1,15 @@
+Fator de balanceamento FB(n):
+sad = sub arvore da direita
+sae = subarvore da esquerda
+
+FB=altura(sad)-altura(sae)
+4 - 2 = 2
+
+balanceamento - rotação
+RR - rotação simples a direita
+LL - rotação simples a esquerda
+RL - rotação dupla a esquerda
+LR - rotação dupla a direita
+
+FB(n) = -2 -> RR 
+FB(n) = +2 -> LL
