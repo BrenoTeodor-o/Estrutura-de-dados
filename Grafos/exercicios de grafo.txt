@@ -1,0 +1,7 @@
+Breno Ribeiro Teodoro
+
+2. caminho com menor custo: A-B-C-F = 22
+
+3)
+    a)	a solução deste item seria um ciclo hamiltoniano que parte de do vértice ‘Fora’. É possível com o caminho Fora-E-A-B-C-G-D-Fora.
+    b)	Neste caso precisaríamos de um ciclo euleriano. Isto não é possível pois os vértices A, E, B, F, G e D têm grau ímpar.
