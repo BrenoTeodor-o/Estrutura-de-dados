@@ -1,6 +1,6 @@
 #include<stdlib.h>
 #include<stdio.h>
-#define TAM 8
+#define TAM 787
 
 int vertice[TAM];
 struct no {
@@ -11,10 +11,10 @@ struck no *aresta[TAM];
 int cont=0;
 
 void insere(int valor){
-	if(cont<TAM){//saber se existe espaço no vetor
+	if(cont<TAM){//saber se existe espaï¿½o no vetor
 		vertice[cont]=valor;
 		cont++;
-	}else printf("não há espaço para inserir");
+	}else printf("nï¿½o hï¿½ espaï¿½o para inserir");
 }
 
 void inicia_grafo(){
@@ -30,13 +30,13 @@ void insere_aresta(int orig, int dest){ //origem e destino
 	while(i<cont && vertice[i]!=orig)
 		i++;
 		if(i==cont){
-			printf("Origem não encontrada");
+			printf("Origem nï¿½o encontrada");
 			return;
 		}
 		while(j<cont && vertice[j]!=dest)
 		j++;
 		if(j==cont{
-		printf("Não encontrada aresta")
+		printf("Nï¿½o encontrada aresta")
 		return;
 }
 	atual=aresta[i];
@@ -56,4 +56,4 @@ void insere_aresta(int orig, int dest){ //origem e destino
 	aresta[i]=aux;
 	else anterior->prox=aux;
 	printf("aresta inserida com sucesso!");
-	
+}

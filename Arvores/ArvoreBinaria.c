@@ -92,12 +92,13 @@ int main () {
 
 	printf("eh estritamente binaria? ", estbinaria(raiz));
 	if (estbinaria(raiz) == 1) printf("sim");
+	
 	else printf("nao");
 	
 	printf("\n\n================================\n\n");
-
+	// qtde_nos(raiz);
 	printf("\n");
-	printf("%d", buscar(raiz, 74));
+	printf("item buscado -> %d", buscar(raiz, 74));
 	printf("\n");
 
 	return 0;
