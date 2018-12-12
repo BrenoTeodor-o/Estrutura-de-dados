@@ -1,7 +1,5 @@
-
 #include "grafo.h"
 #include <string.h>
-
 
 void lerGrafo(){
  char url[]="entrada.txt", ch;
@@ -41,39 +39,18 @@ void lerGrafo(){
 		}
 	}
 
-	printf("Numero de arestas: %d\n",num);
-	printf("Numero de vertices: %d\n",aux);
+	printf("Numero de arestas: %d\n",num+1);
+	printf("Numero de vertices: %d\n",aux+1);
 	printf("grau maximo: %d\n",max);
 	printf("grau minimo: %d\n",min);
 	printf("grau medio: %d\n",(min+max)/2);
 }
 
-void criarArquivo(ITEM *lista){
-	int result, i,j;
-	FILE *fp;
-	fp = fopen ( "saida.txt", "wt" );
-	char Str[100];
-
-	if (fp == NULL){
-   		printf("Problemas na CRIACAO do arquivo\n");
-
-	}else{
-		fprintf (fp, "Numero de arestas: %d\n", num);
-		fprintf (fp, "Numero de vertices: %d\n", aux);
-		fprintf (fp, "Grau maximo: %d\n",max);
-		fprintf (fp, "Grau minimo: %d\n",min);
-		fprintf (fp, "Grau medio: %d\n",(min+max)/2);
-		arquivo();
-	}
-	fclose (fp);
-}
-
 void arquivo(){
-	ITEM * tmp;
-	FILE *fp;
-	fp = fopen ( "saida.txt", "a" );
-	int i;
-
+ITEM * tmp;
+FILE *fp;
+fp = fopen ( "saida.txt", "a" );
+int i;
     for(i=1; i<=aux; i++) {
     tmp = lista[i].prox;
     fprintf(fp,"%d: (%d) ==>", i, lista[i].campo);
@@ -83,11 +60,30 @@ void arquivo(){
         }
     fprintf(fp,"\n");
     }
+}
 
+void criarArquivo(ITEM *lista){
+int result, i,j;
+FILE *fp;
+fp = fopen ( "saida.txt", "wt" );
+char Str[100];
+
+    if (fp == NULL){
+        printf("Problemas na CRIACAO do arquivo\n");
+
+    }else{
+		fprintf (fp, "Numero de arestas: %d\n", num+1);
+		fprintf (fp, "Numero de vertices: %d\n", aux+1);
+		fprintf (fp, "Grau maximo: %d\n",max);
+		fprintf (fp, "Grau minimo: %d\n",min);
+		fprintf (fp, "Grau medio: %d\n",(min+max)/2);
+		arquivo();
+	}
+	fclose (fp);
 }
 
 void ImprimeMatriz(){
-	int i, j;
+int i, j;
 	for(i =0 ; i<aux; i++){
 		for (j=0; j<aux; j++){
 			printf ("%d ", matriz[i][j]);
@@ -96,9 +92,8 @@ void ImprimeMatriz(){
 }
 
 void ImprimeLista(){
-	int i;
-    ITEM * tmp;
-
+int i;
+ITEM * tmp;
     for(i=1; i<=aux; i++) {
     tmp = lista[i].prox;
     printf("%2d: (%d) ==>", i, lista[i].campo);
@@ -112,8 +107,8 @@ void ImprimeLista(){
 
 
 void Imprimir(ITEM *lista){
-    int i,max=0;
-    ITEM * tmp;
+int i,max=0;
+ITEM * tmp;
     for(i=1; i<=aux; i++) {
         tmp = lista[i].prox;
         printf("%2d: (%d) ==>", i, lista[i].campo);
@@ -126,8 +121,8 @@ void Imprimir(ITEM *lista){
 }
 
 int buscaProfundidade(int valor){
-    int i;
-    ITEM * tmp;
+int i;
+ITEM * tmp;
     for(i=1; i<=aux; i++) {
         tmp = lista[i].prox;
         while (tmp != NULL) {
@@ -139,10 +134,6 @@ int buscaProfundidade(int valor){
         }
         printf("\n");
     }
-}
-
-int buscaLargura(){
-
 }
 
 void Inserir_Aresta(ITEM *lista, int a, int b){

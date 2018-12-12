@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1544580504 source:c:\users\teodo\desktop\buscagrafo\grafo.c
+	"grafo.h"
+	<string.h>
+
+1544580014 c:\users\teodo\desktop\buscagrafo\grafo.h
+	<stdlib.h>
+	<stdio.h>
+
+1544580481 source:c:\users\teodo\desktop\buscagrafo\main.c
+	<stdlib.h>
+	<stdio.h>
+

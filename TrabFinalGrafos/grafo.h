@@ -1,4 +1,3 @@
-
 #ifndef GRAFO_H
 #define GRAFO_H
 #define TOTALVERTICES 8
@@ -6,7 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-		typedef struct item{
+    typedef struct item{
 	int campo;
 	struct item* prox;
 	}ITEM;
@@ -26,3 +25,4 @@ void arquivo();
 int buscaProfundidade(int valor);
 
 #endif
+
